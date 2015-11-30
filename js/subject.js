@@ -1,11 +1,23 @@
-angular.module("tutorApp.Subjects",[])
+angular.module("tutorApp.Subjects",['tutorApp.Tutors'])
 .controller("SubjectCtrl", 
-  function($scope, $http, SubjectServices){
+  function($scope, $http, SubjectServices,
+    TutorServices, GetSubjectServices){
   $http.get("resources/subjects.json")
   .success(function(data){
     $scope.subjects = angular.fromJson(data);
     SubjectServices.subjects = $scope.subjects;
-  })  
+  });
+
+  $scope.searchTutor = function(id){
+    $scope.tempSubject = GetSubjectServices.getSubjectById(id);
+    $scope.subjectTutorsList = [];
+    var index = parseInt(id,10);
+    for (var i = TutorServices.tutors.length - 1; i >= 0; i--) {
+      if((TutorServices.tutors[i].subject_ids.indexOf(index)) >= 0){
+        $scope.subjectTutorsList.push(TutorServices.tutors[i]);
+      }
+    }
+  } 
 })
 .service("SubjectServices", function(){
   this.subjectsList = [];

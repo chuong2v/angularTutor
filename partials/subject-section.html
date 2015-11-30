@@ -2,7 +2,29 @@
   <h1 style="color:darkblue">Môn học</h1>
   <div class="item text-center" ng-repeat="item in subjects">
     <div class="col-md-3 panel panel-info">
-      <h3><a ng-click="search(item.id)" ng-cloak>{{item.name}}</a></h3>
+      <h3><a ng-click="searchTutor(item.id)" ng-cloak data-toggle="modal" data-target="#subjectTutorModal">{{item.name}}</a></h3>
     </div>
   </div>
+  <div id="subjectTutorModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Gia sư môn {{tempSubject.name}}</h4>
+      </div>
+
+      <div class="modal-body">
+      <div ng-repeat="tempTutor in subjectTutorsList">
+        <h3 ng-cloak>{{tempTutor.name}} </h3>
+        <p ng-cloak>{{tempTutor.address}} </p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>     
+</div> 
 </div>
+

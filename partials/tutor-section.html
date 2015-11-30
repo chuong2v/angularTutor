@@ -54,13 +54,13 @@
 
         <div class="modal-body">
           <form action="index_submit" method="get" accept-charset="utf-8">
-            <input name="tutorName" ng-model="newtutor.name" type="text" class="form-control" placeholder="Họ tên"/>
+            <input name="tutorName" ng-model="newtutor.name" type="text" class="form-control" placeholder="Họ tên" required/>
 
-            <input name="address" ng-model="newtutor.address" type="text" class="form-control" placeholder="Địa chỉ"/>
+            <input name="address" ng-model="newtutor.address" type="text" class="form-control" placeholder="Địa chỉ" required/>
 
-            <input name="job" ng-model="newtutor.job" type="text" class="form-control" placeholder="Nghề nghiệp"/>
+            <input name="job" ng-model="newtutor.job" type="text" class="form-control" placeholder="Nghề nghiệp" required/>
 
-            <input name="phone" ng-model="newtutor.phone" type="phone" class="form-control" placeholder="Điện thoại"/>
+            <input name="phone" ng-model="newtutor.phone" type="phone" class="form-control" placeholder="Điện thoại" required/>
 
             <input name="grades" ng-model="newtutor.grade_ids" type="text" class="form-control" placeholder="Lớp"/>
 
