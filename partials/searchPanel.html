@@ -1,0 +1,32 @@
+<div id="searchpnl" class="text-center form-inline" >
+    <div id="newButtons">
+      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newTutorModal">Đăng ký làm gia sư</button>
+      <button class="btn btn-primary btn-lg" ng-disabled="false" data-toggle="modal" data-target="#newClassModal">Tạo suất dạy mới</button>
+    </div>
+
+    <div>
+      <input id="searchbox" ng-model="searchText" ng-change="search(searchText)" class="form-control input-lg" type="text"/>
+      <button type="button" id="searchButton" ng-click="search(searchText)"><img src="resources/images/search-button.png" alt=""></button>
+    </div>
+
+    <div id="buttonList">
+     <button type="button" class="btn" title="Hóa học" ng-click="searchSubject(3)"><img src="resources/images/chemical.png"></button> 
+
+     <button type="button" class="btn" title="Vật lý" ng-click="searchSubject(2)"><img src="resources/images/physics.png"></button> 
+
+     <button type="button" class="btn" ng-click="searchSubject(1)" title="Toán học"><img src="resources/images/math.png"></button>
+
+     <button type="button" class="btn" ng-click="searchSubject(5)" title="Tiếng Anh"><img src="resources/images/learning-english.png"></button>
+
+     <button type="button" class="btn" ng-click="searchSubject(6)" title="Văn học"><img src="resources/images/literature.png"></button>
+
+     <button type="button" class="btn" ng-click="searchSubject(9)" title="Sinh học"><img src="resources/images/biology.png"></button>
+
+     <button type="button" class="btn" ng-click="searchSubject(10)" title="Mỹ thuật"><img src="resources/images/art.png"></button>
+
+     <button type="button" class="btn" ng-click="searchSubject(8)" title="Địa lý"><img src="resources/images/geography.png"></button>
+
+     <button type="button" class="btn" ng-click="searchSubject(7)" title="Lịch sử"><img src="resources/images/historical.png"></button>
+   </div>   
+
+ </div>

@@ -1,0 +1,8 @@
+<div id="subject-section" class="container" ng-controller="SubjectCtrl">
+  <h1 style="color:darkblue">Môn học</h1>
+  <div class="item text-center" ng-repeat="item in subjects">
+    <div class="col-md-3 panel panel-info">
+      <h3><a ng-click="search(item.id)" ng-cloak>{{item.name}}</a></h3>
+    </div>
+  </div>
+</div>

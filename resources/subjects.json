@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Toán học"
+  },
+  {
+    "id": "2",
+    "name": "Vật lý"
+  },
+    {
+    "id": "3",
+    "name": "Hóa học"
+  },
+    {
+    "id": "4",
+    "name": "Tiếng Việt"
+  },
+    {
+    "id": "5",
+    "name": "Tiếng Anh"
+  },
+    {
+    "id": "6",
+    "name": "Văn học"
+  },
+    {
+    "id": "7",
+    "name": "Lịch Sử"
+  },
+    {
+    "id": "8",
+    "name": "Địa Lý"
+  },
+    {
+    "id": "9",
+    "name": "Sinh học"
+  },
+    {
+    "id": "10",
+    "name": "Mỹ Thuật"
+  },
+  {
+    "id": "11",
+    "name": "Địa lý"
+  },
+    {
+    "id": "12",
+    "name": "Tin học"
+  }
+]
